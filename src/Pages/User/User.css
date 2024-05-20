@@ -5,3 +5,11 @@
     color: #666;
     transition: 0.3s;
 }
+.FooterStyle{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
