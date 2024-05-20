@@ -15,6 +15,7 @@ import Livro from './Pages/Livro/Livro';
 import Eventos from './Pages/Eventos/Eventos';
 import Tcc from './Pages/Tcc/Tcc';
 import Adm from './Pages/Adm/Adm';
+import User from './Pages/User/User';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route path="/livropdf" element={user ? <Livro /> : <Login />} exact />
             <Route path="/eventos" element={user ? <Eventos /> : <Login />} exact />
             <Route path="/trabalhos" element={user ? <Tcc /> : <Login />} exact />
+            <Route path="/user" element={user ? <User /> : <Login />} exact />
             <Route path="/educaadmguine" element={user ? <Adm /> : <Login />} exact />
           </Routes>
         </Router>

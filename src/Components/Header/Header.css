@@ -4,6 +4,24 @@ body {
     margin: 0;
     padding: 0;
   }
+  .navStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .UlStyle{
+    align-items: center;
+  }
+  .userNameStyle{
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
   .logoutItem{
     cursor: pointer;
   }

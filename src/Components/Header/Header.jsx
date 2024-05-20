@@ -1,14 +1,20 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
 import { Context } from '../../Context/Context'
 
 export default function Header() {
-    const { user, dispatch } = useContext(Context)
+    const { user } = useContext(Context)
+    const [userName, setUserName] = useState(" ")
 
-    const hendSair = ()=>{
-        dispatch({type: "LOGOUT"})
-    }
+    useEffect(()=>{
+        const getUserName = ()=>{
+            const Name = user?.nome.split(" ")[0]
+            setUserName(Name)
+        }
+        getUserName()
+    }, [user?.nome])
+
   return (
     <header>
         <div className="container">
@@ -25,15 +31,15 @@ export default function Header() {
                     <a href=""></a>
                 </div>
             </div>
-            <nav>
-                <ul>
+            <nav className='navStyle'>
+                <ul className='UlStyle'>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/sobre">Sobre</Link></li>
                     <li><Link to="/categorias">Categorias</Link></li>
                     <li><Link to="/recursos">Recursos</Link></li>
                     <li><Link to="/contato">Contato</Link></li>
                     {user?.adm && (<li><Link to="/educaadmguine">Cadastrar</Link></li>)}
-                    {user && (<li><div className='logoutItem' onClick={hendSair}>Logout</div></li>)}
+                    {user && (<li className='userNameStyle'><Link to="/user">{userName}</Link></li>)}
                 </ul>
             </nav>
         </div>

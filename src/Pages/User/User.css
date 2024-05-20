@@ -1,0 +1,7 @@
+.sairButtonStyle{
+    cursor: pointer;
+}
+.sairButtonStyle:hover{
+    color: #666;
+    transition: 0.3s;
+}
