@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header'
 import { Link } from 'react-router-dom'
 
 export default function Recursos() {
+
   return (
 <div className='body'>
   <Header />
@@ -62,11 +63,6 @@ export default function Recursos() {
     </section>
   </main>
 
-  <footer className='FooterStyle'>
-    <div className="container">
-      <p>&copy; 2024 Repositório Educa Guiné</p>
-    </div>
-  </footer>
 </div>
   )
 }
