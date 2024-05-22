@@ -60,7 +60,7 @@ export default function Material() {
         </section>
     </main>
 
-    <footer className='FooterStyle'>
+    <footer>
         <div className="container">
             <p>&copy; 2024 Repositório Educa Guiné</p>
         </div>

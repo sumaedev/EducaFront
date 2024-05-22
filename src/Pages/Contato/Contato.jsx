@@ -1,6 +1,7 @@
 import React from 'react'
 import './Contato.css'
 import Header from '../../Components/Header/Header'
+import { Link } from 'react-router-dom'
 
 export default function Contato() {
   return (
@@ -34,19 +35,19 @@ export default function Contato() {
           <h2>Acompanhe-nos nas Redes Sociais</h2>
           <ul className="redes-sociais">
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to='#' target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-f"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to='#' target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <Link to='#' target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </section>
@@ -54,7 +55,7 @@ export default function Contato() {
     </div>
   </main>
 
-  <footer className='FooterStyle'>
+  <footer>
     <div className="container">
       <p>&copy; 2024 Repositório Educa Guiné</p>
     </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './style.css'
 import Header from '../../Components/Header/Header'
 import api from '../../Services/api'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     const [evento, setEvento] = useState({})
@@ -46,7 +47,7 @@ export default function Home() {
               <div className="container">
                   <h2>Bem-vindo ao Repositório Educa Guiné</h2>
                   <p>Acesse recursos educacionais gratuitos e de qualidade para estudantes e professores da Guiné.</p>
-                  <a href="recursos.html" className="btn">Explorar Recursos</a>
+                  <Link href="/recursos" className="btn">Explorar Recursos</Link>
               </div>
           </section>
           <section className="featured-categories">
@@ -124,7 +125,7 @@ export default function Home() {
               <div className="container">
                   <h2>Contribua para o Repositório</h2>
                   <p>Se você possui recursos educacionais que gostaria de compartilhar, envie-os para nosso repositório.</p>
-                  <a href="contato.html" className="btn">Enviar Recurso</a>
+                  <Link to='/contato' className="btn">Enviar Recurso</Link>
               </div>
           </section>
       </main>

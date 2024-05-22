@@ -51,7 +51,7 @@ export default function Categoria() {
     </section>
   </main>
 
-  <footer className='FooterStyle'>
+  <footer>
     <div className="container">
       <p>&copy; 2024 Repositório Educa Guiné</p>
     </div>
