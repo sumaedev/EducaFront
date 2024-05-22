@@ -14,10 +14,10 @@ export default function Recursos() {
       <div className="container">
         <h2>Recursos Educacionais</h2>
         <p>Aqui você encontra diversos materiais para auxiliar em seus estudos. Explore por nível de escolaridade, disciplina ou utilize a barra de pesquisa para encontrar conteúdos específicos.</p>
-        <div className="search-bar">
+        {/* <div className="search-bar">
           <input type="text" placeholder="Pesquisar recursos" />
           <button>Buscar</button>
-        </div>
+        </div> */}
       </div>
     </section>
 

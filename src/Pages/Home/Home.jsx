@@ -47,7 +47,7 @@ export default function Home() {
               <div className="container">
                   <h2>Bem-vindo ao Repositório Educa Guiné</h2>
                   <p>Acesse recursos educacionais gratuitos e de qualidade para estudantes e professores da Guiné.</p>
-                  <Link href="/recursos" className="btn">Explorar Recursos</Link>
+                  <Link to="/recursos" className="btn">Explorar Recursos</Link>
               </div>
           </section>
           <section className="featured-categories">
