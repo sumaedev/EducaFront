@@ -10,7 +10,7 @@ export default function Recursos() {
   <Header />
 
   <main>
-    <section className="hero">
+    <section className="heroRecurso">
       <div className="container">
         <h2>Recursos Educacionais</h2>
         <p>Aqui você encontra diversos materiais para auxiliar em seus estudos. Explore por nível de escolaridade, disciplina ou utilize a barra de pesquisa para encontrar conteúdos específicos.</p>
