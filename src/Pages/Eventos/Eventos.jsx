@@ -51,7 +51,7 @@ export default function Eventos() {
         </section>
     </main>
 
-    <footer className='FooterStyle'>
+    <footer>
         <div className="container">
             <p>&copy; 2023 Repositório Educa Guiné - Todos os direitos reservados.</p>
         </div>
